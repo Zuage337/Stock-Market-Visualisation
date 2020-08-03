@@ -3,4 +3,4 @@ A Python script that converts JSON data of the stock market into useful graphs t
 
 Real stock market data included was obtained from https://iexcloud.io
 
-<a href="url"><img src="https://imgur.com/vBb1RPA.png" align="left" height="350" width="600" ></a>
+<a href="https://imgur.com/vBb1RPA.png"><img src="https://imgur.com/vBb1RPA.png" align="left" height="350" width="600" ></a>
