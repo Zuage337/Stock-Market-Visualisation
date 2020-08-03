@@ -1,5 +1,5 @@
 # Stock Market Visualisation for Python & Jupyter Notebook
-A script that converts JSON data of the stock market into useful graphs that can help you make decisions on your investments.
+A script that converts JSON data of the stock market into useful graphs that can help you make decisions on your investments. Comes with a Bollinger Band indicator and volume traded per time period.
 
 Real stock market data included was obtained from https://iexcloud.io
 
