@@ -39,7 +39,7 @@ def get_symbol_df(symb, LoT):
     return df
 
 # 50 period moving average
-def fifty_mv(df):
+def fifty_ma(df):
     df["sma50"] = df.Close.rolling(50).sum() / 50
 
     return df
@@ -51,8 +51,8 @@ def bollinger_bands(df):
     return df
 
 # Plot 50 period moving average
-def plot_fifty_mv(df, chart):
-    df = fifty_mv(df)
+def plot_fifty_ma(df, chart):
+    df = fifty_ma(df)
     chart.line(df['index'], df['sma50'], color='orange', alpha=0.7)
 
     return chart
@@ -155,7 +155,7 @@ p_stock = plot_stock_price(stock, symbol, lengthOfTime)
 while True:
     fifty = input("An orange 50 period moving average? Y/N: ").upper()
     if fifty == 'Y':
-        plot_fifty_mv(df, p_stock)
+        plot_fifty_ma(df, p_stock)
         break
     elif fifty == 'N':
         break
