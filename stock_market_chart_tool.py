@@ -50,6 +50,7 @@ def bollinger_bands(df):
 
     return df
 
+
 # Plot 50 period moving average
 def plot_fifty_ma(df, chart):
     df = fifty_ma(df)
