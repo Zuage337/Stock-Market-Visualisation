@@ -38,13 +38,11 @@ def get_symbol_df(symb, LoT):
 
     return df
 
-
 # 50 period moving average
 def fifty_mv(df):
     df["sma50"] = df.Close.rolling(50).sum() / 50
 
     return df
-
 
 # Standard Deviation column added to calculate the Bollinger Bands
 def bollinger_bands(df):
@@ -52,14 +50,12 @@ def bollinger_bands(df):
 
     return df
 
-
 # Plot 50 period moving average
 def plot_fifty_mv(df, chart):
     df = fifty_mv(df)
     chart.line(df['index'], df['sma50'], color='orange', alpha=0.7)
 
     return chart
-
 
 # Plot Bollinger Bands
 def plot_bb(df, chart):
